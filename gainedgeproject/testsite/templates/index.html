@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+    <h1>GainEdge Consulting Pvt. Ltd.</h1>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="document">
+        <button type="submit">Upload file</button>
+    </form>
+    <br>
+    <a href="/home/download/"><button>Download file</button></a>
+</body>
+</html>
